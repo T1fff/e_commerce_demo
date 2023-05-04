@@ -1,0 +1,441 @@
+/** products section */
+:root{
+  --color-primary: #121742;
+  --color-secondary: #75453a;
+  --white:#f9f9f9;
+  --black: #202020;
+}
+
+main{
+  color: var(--black);
+}
+
+/** newArrivals title */
+.newArrivals-title{
+  font-family: 'Noto Serif Display', sans-serif; 
+}
+.title {
+   padding: 0.2rem 5px;
+   font-size: 1.1rem;
+   color: rgba(75, 51, 51, 0.867) !important;
+   font-weight: 800;
+   font-family: 'Anek Devanagari', sans-serif;
+   transition: border-bottom 400ms linear;
+   transition: 0.5s;
+   box-shadow: 2px 3px 0px 0px rgba(206, 206, 206, 0.712);
+
+}
+
+.title:hover{
+  transition: 0.3s ease;
+  transform: scale(1.05);
+  color: var(--color-secondary);
+  box-shadow: 2px 3px 3px 0px rgba(136, 136, 136, 0.712);
+}
+
+/** newArrivals products */
+
+.jewelry-p{
+  border: 1px solid rgb(41, 41, 41);
+  max-width: 300px;
+  transition: 0.2s;
+}
+
+.jewelry-p:hover{
+  transform: scale(1.05);
+}
+
+.product-image{
+  height: auto;
+  width: 16.5rem;
+  justify-self: center;
+}
+
+.product-name{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.button-prod{
+  font-family: "Anek Devanagari", sans-serif;
+  border: 1px solid var(--black);
+  background: var(--white);
+  transition: background 400ms ease;
+  margin: 0 auto;
+  padding: 0.30rem 0.5rem;
+  transition: 0.2s;
+}
+
+.button-prod:hover{
+  font-weight: 600;
+  background-color: #e0b0a7;
+  color: var(--black);
+}
+
+/** other Arrivals */
+.other{
+  background: var(--color-secondary);
+  width: 100%;
+  margin-bottom: 2rem;
+  padding-bottom: 3rem;
+}
+
+.other img{
+  max-width: 100%;
+  height: inherit;
+}
+
+.title-other {
+  font-family: 'Noto Serif Display', sans-serif; 
+  margin: 1rem 0.25rem;
+  font-size: 2rem;
+  color: var(--white);
+}
+
+.description-other {
+  padding: 0rem 2rem;
+  font-size: 1.2rem;
+  color: var(--white);
+  font-family: "Anek Devanagari", sans-serif;
+}
+
+.other > button:hover {
+  background: #bd7362;
+}
+
+/** Special Promotion */
+.promotion{
+  border-bottom: 1px solid #75453a34;
+  padding-bottom: 1rem;
+}
+
+.promotion > span {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.title-promotion, .title-newsletter {
+  font-family: 'Noto Serif Display', sans-serif; 
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.description-promotion, .description-newsletter {
+  font-size: 1 rem;
+}
+
+/** Suscribe */
+.email-newsletter{
+  padding: 1rem;
+  border: 1px solid #75453a89;
+  transition: 0.5s;
+  outline: none;
+  border-radius: 10px 0 0 10px ;
+}
+
+.email-newsletter:focus{
+  border: 2px solid #43272189;
+}
+
+.email-newsletter::placeholder{
+  color: #10143da5;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.button-newsletter{
+  padding: 1rem 0;
+  border: 1px solid #75453a89;
+  background: var(--color-secondary);
+  color: var(--white);
+  font-family: "Anek Devanagari", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  align-self: center;
+  transition: 0.5s;
+  border-radius: 0 10px 10px 0;
+}
+
+.button-newsletter:hover{
+  background: #4b2c25;
+}
+
+@media screen and (min-width: 768px) {
+  /* *carousel */
+   
+  .carousel img {
+    width: 100%;
+    overflow: hidden;
+
+  }
+  /* *nav bar */
+  .navbar-brand {
+    justify-content: center !important;
+  }
+  /* *Arrival products */
+  .jewelry-p > img{
+    width: 30rem;
+    height: auto;
+   }
+
+   .jewelry-p{
+    border: 1px solid rgb(41, 41, 41);
+    max-width: 600px;
+  }
+
+  .title {
+    padding: 0.2rem 5px;
+     font-size: 1.5rem;
+     color: rgba(50, 46, 46, 0.745);
+     font-weight: 800;
+     font-family: 'Anek Devanagari', sans-serif;
+     transition: border-bottom 400ms linear;
+    cursor: pointer;
+  }
+
+  .product-name{
+    font-size: 1.9rem;
+  }
+
+  .logo-footer img{
+    max-width: 100px;
+  }
+
+  /* *other Arrivals */
+
+  .other img{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+  .title-other {
+    margin: 2rem 0rem 1rem;
+    font-size: 3rem;
+  }
+  
+  .description-other {
+    padding: 1rem 4rem;
+    font-size: 1.5rem;
+    
+  }
+
+  .other > button {
+    padding: 0.75rem;
+    font-size: 1.3rem;
+  }
+
+  /* *promotion & newsletter */
+  .promotion > span {
+    margin-top: 0.8rem;
+    font-size: 2rem;
+  }
+
+  .promotion {
+    padding: 1rem 3rem !important;
+  }
+
+  .newsletter {
+    padding: 2rem 5rem !important;
+  }
+  
+  .title-promotion, .title-newsletter {
+    font-size: 2.2rem;
+    font-weight: 600;
+  }
+  
+  .description-promotion, .description-newsletter {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  /* *nav &footer */
+  .navbar{
+    font-size: 1.2rem;
+  }
+
+  .collapse-horizontal{
+    max-width: 150px;
+  }
+  /* *carousel */
+  .carousel-item{
+    height: 900px;
+    width: 100%;
+  }
+  
+
+ /* *newArrivals */
+ 
+  .jewelry{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5rem;
+
+  }
+
+  .title {
+    padding: 0.2rem 5px;
+    font-size: 1.5rem;
+  
+  }
+
+  .product-name{
+    font-size: 1.9rem;
+  }
+
+  .logo-footer img{
+    max-width: 100px;
+ }
+
+  .jewelry-p > img{
+    width: 20rem;
+    height: auto;
+   }
+
+   .jewelry-p{
+    border: 1px solid rgb(41, 41, 41);
+    max-width: 350px;
+    margin: 0 0.5rem;
+  }
+
+  .title {
+    padding: 0.2rem 5px;
+     font-size: 1.5rem;
+     color: rgba(50, 46, 46, 0.745);
+     font-weight: 800;
+     font-family: 'Anek Devanagari', sans-serif;
+     transition: border-bottom 400ms linear;
+  
+  }
+
+  .product-name{
+    font-size: 1.9rem;
+  }
+
+  .logo-footer img{
+    max-width: 100px;
+  }
+
+  /* *other Arrivals */
+
+  .other{
+    flex-direction: row !important;
+    height: fit-content;
+    padding-bottom: 0;
+  }
+
+  .other img{
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    clip-path: polygon(0 0, 64% 0, 100% 100%, 0% 100%);
+  }
+
+  .text > button{
+    margin: 0 auto;
+  }
+
+  .other:first-of-type+.other img{
+    clip-path: polygon(27% 0, 100% 0, 100% 100%, 0 100%);
+    position: relative;
+    left: 42.9%;
+  }
+
+  .other:first-of-type+.other >.text{
+   position: relative;
+   right: 65%;
+  }
+
+  .other > .text {
+  justify-content: center;
+  align-self: center;
+  max-width: 30%;
+  }
+
+  .title-other {
+    margin: 2rem 0rem 1rem;
+    font-size: 3rem;
+  }
+  
+  .description-other {
+    padding: 1rem 4rem;
+    font-size: 1.5rem;
+    
+  }
+
+  .other > button {
+    padding: 0.75rem;
+    font-size: 1.3rem;
+  }
+
+  /* *promotion & newsletter */
+  .promotion > span {
+    margin-top: 0.8rem;
+    font-size: 2rem;
+  }
+
+  .promotion {
+    padding: 2rem 15rem !important;
+  }
+
+  .newsletter {
+    padding: 2rem 15rem !important;
+    margin-bottom: 5rem;
+  }
+  
+  .title-promotion, .title-newsletter {
+    font-size: 2.2rem;
+    font-weight: 600;
+  }
+  
+  .description-promotion, .description-newsletter {
+    font-size: 1.3rem;
+  }
+
+}
+
+@media screen and (min-width: 1400px) {
+  main {
+    max-width: 99.99%;
+    margin: 0 auto;
+  }
+
+  .carousel-item{
+    height: 900px;
+    width: 100%;
+  }
+  
+  .crop{
+    position: absolute;
+    top: -50%;
+    bottom: -50%;
+    margin: auto;
+ }
+ 
+  .jewelry-p > img{
+    width: 22.8rem;
+    height: auto;
+
+   }
+
+   .jewelry-p{
+    max-width: 400px;
+    margin: 0 2rem;
+  }
+
+  .title {
+    padding: 0.2rem 5px;
+    font-size: 1.5rem;
+  
+  }
+
+  .product-name{
+    font-size: 1.9rem;
+  }
+
+  .logo-footer img{
+    max-width: 180px;
+}
+}

@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari&family=Reem+Kufi+Fun:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@500&display=swap');
+
+:root{
+    --color-primary: #121742;
+    --color-secondary: #75453a;
+    --white:#f9f9f9;
+    --black: #202020;
+}
+
+* {
+
+   font-family: 'Noto Serif Display', sans-serif; 
+   font-family: 'Anek Devanagari', serif;
+}
+
+main {
+    background: #f5f5f5;
+    color: var(--white)
+}
+
+nav, footer{
+    
+    background-color: var(--color-primary);
+    color: var(--white)
+}
+
+.nav-container{
+    max-width: 1650px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.navbar > .container-fluid{
+    flex-wrap: nowrap;
+    
+}
+
+.navbar-toggler{
+   border: none; 
+   margin: 0;
+   padding: 0;
+ }
+
+.nav-link:hover{
+    color: var(--white);
+}
+
+
+.navbar-logo{
+    width: 30%;
+    padding: 1rem 0;
+}
+
+.navbar-collapse {
+    padding-left: 2rem;
+}
+.card{
+    margin-top: 4px;
+    background-color: #fbfbfb1f;
+    padding: 0;
+    max-height: 2rem;
+}
+
+.card > input {
+    justify-items: center;
+    margin: 0;
+    background: #f9f9f909;
+    border: none;
+    border-bottom:1px solid #f9f9f9;
+    color: var(--white);
+    
+}
+
+.social-media {
+    max-width: 1650px;
+    margin: 0 auto;
+}
+
+.logo-footer img{
+    max-width: 200px;
+}
+
+.fa-magnifying-glass, .fa-circle-user, .fa-cart-shopping {
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+.fa-circle-user {
+    font-size: 1.3rem;
+}
+
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--color-secondary);
+  }
+
+
+@media screen and (min-width: 768px) {
+
+    .logo-footer img{
+        width: 130px;
+    }
+    
+    .navbar-collapse{
+        max-width: 40%;
+        padding: 1rem 0;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .logo-footer img{
+        width: 180px;
+    }
+
+    .nav-container{
+        justify-content: center;
+    }
+
+    .navbar-collapse {
+        margin-right: 8rem;
+        padding-left: 2rem;
+    }
+
+    .search-input {
+        max-width: 175px;
+    }
+}

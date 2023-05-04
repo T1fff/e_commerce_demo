@@ -1,0 +1,311 @@
+:root{
+    --color-primary: #121742;
+    --color-secondary: #75453a;
+    --white:#f9f9f9;
+    --black: #202020;
+  }
+
+.modal-body{
+    color: var(--black);
+}
+.modal-body img{
+    max-width: 100%;
+    max-height: 500px;
+}
+
+.product-name{
+    margin: 0 3px 13px;
+}
+
+.btn-close{
+    width: 195%;
+}
+
+.product-family{
+    margin: 0.5rem 0;
+    font-style: italic;
+    color: rgba(34, 34, 34, 0.834);
+}
+.shipping{
+    padding: 0 0 0.5rem  ;
+    align-items: center;
+    border-bottom: 1px solid #000;
+}
+.shipping i {
+    margin: 0 5px 7px 0;
+}
+.shipping p {
+    margin: auto 0;
+}
+.quantity, .size{
+    margin-top: 7px;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+}
+
+.quantity h1, .size h1{
+    font-size: 1rem;
+    font-weight: 800;
+    align-self: center;
+    
+}
+
+.quantity option, .size option{
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 800;
+    align-self: center;
+    
+}
+
+.size-form, .quantity-form{
+    max-width: 100px;
+    height: 35px;
+    border: none;
+    font-size: 0.9rem;
+}
+
+.quantity-form{
+    max-width: 45px;
+}
+
+.form-select{
+    padding: 0;
+}
+.addtoCart{
+    margin: 1.5rem 0;
+}
+
+.addtoCart-button i {
+    margin-top: 4px;
+    margin-left: 5px;
+    font-size: 0.8rem;
+}
+
+.addtoCart-button {
+    width: 100%;
+    color: var(--white);
+    background: #97270d;
+    padding: 0.5rem 1rem 0.3rem;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s
+}
+
+.addtoCart-button:hover {
+    transform: scale(1.06);
+    background: #691a09;  
+}
+
+.description h1 {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.page-link{
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px){
+    .product-family{
+        font-size: 1.1rem;
+    }
+
+    .carousel{
+        max-width: 100% !important;
+    }
+
+    .modal-dialog{
+        max-width: fit-content;
+        margin: 0 auto;
+    }
+
+    .modal-content{
+        width: 700px;
+    }
+
+    .modal-body img{
+        width: 100% !important;
+        height: 75%;
+        object-fit: cover;
+
+    }
+
+    .carousel {
+        width: 450px;
+    }
+
+    .quantity h1, .size h1, .shipping{
+        font-size: 1.5rem;
+        font-weight: 800;
+        align-self: center;
+        
+    }
+    
+    .quantity option, .size option{
+        justify-content: center;
+        font-size: 1rem;
+        font-weight: 800;
+        align-self: center;
+        
+    }
+    
+    .size-form, .quantity-form{
+        max-width: 150px;
+        height: 55px;
+        border: none;
+        font-size: 1.3rem;
+    }
+
+    .description h1 {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+    .description p, ul {
+        font-size: 1.5rem;
+        
+    }
+
+    .addtoCart-button {
+        width: 75%;
+        padding: 1rem 1.2rem 0.7rem;
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 1000px){
+
+    .img-text{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .modal-dialog{
+        max-width: fit-content;
+        margin: 4rem auto;
+        
+    }
+
+    .modal-content{
+        width: 950px;
+    }
+
+    .modal-body img {
+        max-width: 100%;
+    }
+
+    .title-img{
+        max-width: 60%;
+    }
+
+    .modal-info {
+        margin-left: 3rem;
+        margin-top: 5rem;
+        width: 50%;
+    }
+    
+    .product-family{
+        font-size: 1rem;
+    }
+
+    .quantity h1, .size h1, .shipping{
+        font-size: 1.2rem;        
+    }
+    
+    .quantity option, .size option{
+        justify-content: center;
+        font-size: 1rem;
+        font-weight: 800;
+        align-self: center;
+        
+    }
+    
+    .size-form, .quantity-form{
+        max-width: 150px;
+        font-size: 1rem;
+    }
+
+
+    .description h1 {
+        margin-top: 1.2rem;
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+
+    .description p, ul {
+        font-size: 1.1rem;
+        
+    }
+    .addtoCart-button {
+        width: 100%;
+        padding: 1rem 1.2rem 0.7rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    
+    .modal-content{
+        width: 1450px;
+    }
+
+    .modal-body img{
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover;
+
+    }
+
+    .carousel {
+        width: 750px;
+    }
+
+    .title-img{
+        max-width: 60%;
+    }
+
+    .modal-info {
+        margin-left: 3rem;
+        margin-top: 5rem;
+        width: 50%;
+    }
+    
+    .product-family{
+        font-size: 1.2rem;
+    }
+
+    .quantity h1, .size h1, .shipping{
+        font-size: 1.4rem;        
+    }
+    
+    .quantity option, .size option{
+        font-size: 1.3rem;
+    }
+    
+    .size-form, .quantity-form{
+        max-width: 175px;
+        font-size: 1.2rem;
+    }
+
+
+    .description h1 {
+        margin-top: 1.4rem;
+        font-size: 1.7rem;
+    }
+
+    .description p, ul {
+        font-size: 1.3rem;
+        
+    }
+    .addtoCart-button {
+        width: 75%;
+        padding: 1rem 1.2rem 0.7rem;
+        font-size: 1.4rem;
+    }
+
+    .addtoCart-button i {
+        font-size: 1.1rem;
+        margin: 5px 0 0 5px;
+    }
+}

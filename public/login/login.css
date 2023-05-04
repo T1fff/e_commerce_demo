@@ -1,0 +1,172 @@
+:root{
+    --color-primary: #121742;
+    --color-secondary: #75453a;
+    --white:#f9f9f9;
+    --black: #202020;
+}
+
+main, body {
+    background: #f9f9f9;
+}
+
+
+.login{
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -3px rgb(62, 61, 61);
+}
+
+.form-control{
+    transition: 0.5s;
+}
+
+.form-control:active{
+    transform: scale(1.05);
+}
+
+
+label, .title {
+    color: var(--black) !important;
+    font-weight: 800;
+}
+
+.buttons > div{
+    margin: 0 auto;
+    z-index: 5;
+}
+
+.signIn, .signUp, .confirmation-button, .confirmation-signUP {
+    padding: 0.6rem;
+    width: 7rem;
+    border: none;
+    border-radius: 7px;
+    background: var(--color-primary);
+    color: var(--white);
+    font-weight: 800;
+    transition: 0.3s;
+}
+
+.signUp {
+    background: white;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+
+}
+
+.signUp:hover, .signUp:active, .signIn:hover, .signIn:active, .confirmation-button:hover, .confirmation-button:active, .confirmation-signUP:hover, .confirmation-signUP:active  {
+    transform: scale(1.1);
+    box-shadow: 0px 5px 5px -3px rgb(62, 61, 61);
+}
+
+.signUp:hover, .signUp:active {
+    border: none;
+    background: var(--color-secondary);
+    color: #ffffff;
+}
+
+.mistake-div{
+    margin-top: 1rem;
+}
+
+.mistake{
+    color: #20202099;
+    font-size: 0.9rem;
+}
+
+/** WELCOME SECTION  */
+
+.welcome{
+    color: var(--black);
+}
+
+.welcome h1 {
+    color: #121742;
+    font-weight: 800;
+}
+
+.welcome span {
+    font-weight: 500;
+    font-family: 'Noto Serif Display', sans-serif;
+}
+
+.welcome p:first {
+    font-size: 1rem;
+}
+
+/** CONFIRMATION EMAIL*/
+.validating-code{
+    color: var(--black);
+}
+
+.validating-code h6 {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.validating-code input {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.validating-code button {
+    margin-top: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .log > .input-group-text  {
+        margin-left: 0 !important;
+    }
+    .login {
+        margin: 7rem 3rem !important;
+        width: 35rem;
+    }
+
+    .welcome h1 {
+        font-size: 2rem;
+    }
+
+    .welcome p {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .title {
+        margin-bottom: 1.5rem;
+    }
+    .login {
+        margin: 7rem 3rem !important;
+        padding: 5rem 3rem !important;
+        width: 40rem;
+    }
+
+    .confirmation-button{
+        width: fit-content;
+    }
+
+    .validating-code input {
+        border: none;
+        border-radius: 0;
+        border-bottom: 2px solid var(--color-primary);
+        margin: 0 auto;
+        max-width: 450px;
+        transition: 0.3s;
+    }
+
+    .validating-code button {
+        margin-top: 20px;
+    }
+
+    .validating-code input:hover, .validating-code input:active {
+        transform: scale(1.05);
+    }
+
+    .validating-code button:hover, .validating-code button:active{
+        transform: scale(1.1);
+    }
+}

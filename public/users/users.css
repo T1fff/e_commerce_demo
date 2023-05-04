@@ -1,0 +1,108 @@
+:root{
+    --color-primary: #121742;
+    --color-secondary: #75453a;
+    --white:#f9f9f9;
+    --black: #202020;
+}
+
+main, body {
+    background: #f9f9f9;
+}
+
+.administrator-page{
+    margin: 2rem;
+    color: var(--black);
+}
+
+.title{
+    font-weight: 800;
+}
+
+
+.order {
+    border: 1px solid #12174251;
+    border-radius: 7px;
+}
+
+.product:first-child{
+    padding-top: 0.5rem;
+}
+
+.product:last-child{
+    border: none;
+    padding-bottom: 0.5rem
+}
+
+.order-title, .order-content{
+    padding: 1rem;
+}
+
+.order-title {
+    border-bottom: 1px solid #2020204d; 
+    background: var(--color-primary);
+    border-radius: 7px 7px 0 0;
+}
+
+.order-title > h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--white);
+}
+.img {
+    width: 40%;
+}
+
+.product {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid ;
+}
+
+.img img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.text h6{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.text p{
+    font-size: 0.7rem;
+}
+
+.text > p, .text h6 {
+    margin: 0;
+}
+
+.price {
+    font-style: italic;
+}
+
+@media screen and (min-width: 768px) {
+    .img img{
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .text h6{
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+    
+    .text p{
+        font-size: 1.2rem;
+    }
+
+    .order {
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        max-width: 500px;
+    }
+
+    .order-content{
+        width: 95%;
+    }
+}
